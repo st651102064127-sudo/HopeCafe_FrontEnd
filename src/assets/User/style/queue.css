@@ -1,0 +1,239 @@
+/* queue.css */
+.queue-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.queue-header {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.toggle-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #2980b9;
+}
+
+.queue-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.queue-form .form-control,
+.queue-form .form-select,
+.table-select {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.queue-form .form-control:focus,
+.queue-form .form-select:focus,
+.table-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.primaryBtn {
+    background-color: #2ecc71;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+.assign-btn {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.assign-btn:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+.assign-btn:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.complete-btn {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.complete-btn:hover {
+    background-color: #27ae60;
+    color: white;
+}
+
+.cancel-btn {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10px;
+}
+
+.bg-warning {
+    background-color: #f39c12 !important;
+    color: white;
+}
+
+.bg-success {
+    background-color: #2ecc71 !important;
+    color: white;
+}
+
+.bg-secondary {
+    background-color: #7f8c8d !important;
+    color: white;
+}
+
+.bg-danger {
+    background-color: #e74c3c !important;
+    color: white;
+}
+
+.bg-info {
+    background-color: #3498db !important;
+    color: white;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .queue-container {
+        padding: 15px;
+    }
+
+    .queue-header {
+        font-size: 1.5rem;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .assign-btn,
+    .complete-btn,
+    .cancel-btn {
+        margin-bottom: 5px;
+        display: block;
+        width: 100%;
+    }
+}
+
+/* For large modal */
+.modal-lg .modalContent-lg {
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .modal-lg .modalContent-lg {
+        width: 95%;
+        max-width: 95%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-lg .modalContent-lg {
+        width: 100%;
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
+    }
+}

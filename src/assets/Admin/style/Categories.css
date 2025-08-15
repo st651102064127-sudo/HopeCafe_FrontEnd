@@ -1,0 +1,102 @@
+
+        
+
+          .mainContainer {
+            font-family: 'Kanit', sans-serif;
+          }
+
+          .header {
+            color: #5d4a3e; /* สีน้ำตาลเข้ม */
+            font-weight: 600;
+          }
+
+          .card {
+            background-color: #fcfaf7; /* ขาวนวล */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+          }
+
+          .table thead th {
+            background-color: #f0ebe4; /* สีครีมอ่อน */
+            color: #5d4a3e;
+            font-weight: 500;
+            border-bottom: 2px solid #e0d8cf;
+          }
+
+          .table tbody tr:hover {
+            background-color: #f7f3ed;
+          }
+
+          .editBtn,
+          .deleteBtn {
+            border-radius: 8px;
+            transition: all 0.2s ease-in-out;
+          }
+
+          .editBtn {
+            background-color: #8f796a; /* น้ำตาลอ่อน */
+            color: #fff;
+            border: none;
+          }
+
+          .editBtn:hover {
+            background-color: #6a5345; /* น้ำตาลเข้มขึ้น */
+          }
+
+          .deleteBtn {
+            background-color: #e0d8cf; /* เทาอ่อน */
+            color: #5d4a3e;
+            border: none;
+          }
+
+          .deleteBtn:hover {
+            background-color: #c9bfb4; /* เทาเข้มขึ้น */
+          }
+
+          .primaryBtn {
+            background-color: #a0855b; /* สีน้ำตาลกาแฟ */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+          }
+
+          .primaryBtn:hover {
+            background-color: #8c734a; /* น้ำตาลเข้มขึ้น */
+          }
+
+          .cancelBtn {
+            background-color: #e9ecef; /* เทาอ่อน */
+            color: #495057;
+            border: none;
+            border-radius: 8px;
+            font-weight: 500;
+          }
+
+          .cancelBtn:hover {
+            background-color: #dee2e6; /* เทาเข้มขึ้น */
+          }
+
+          /* Modal Styles */
+          .modalOverlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+          }
+
+          .modalContent {
+            background: #fcfaf7;
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+          }
