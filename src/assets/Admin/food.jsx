@@ -3,8 +3,7 @@ import DataTable from 'react-data-table-component';
 import AdminNavbar from './Component/Navbar';
 import axios from 'axios';
 import sweetAlert from './Component/sweetAlert';
-import './style/food.css';
-import './style/categories.css';
+
 
 const ItemManagement = ({ allowOverflow }) => {
   const [items, setItems] = useState([]);
