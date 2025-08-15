@@ -5,6 +5,7 @@ import axios from 'axios';
 import ErrorMessage from './Component/errorMessage';
 import sweetAlert from './Component/sweetAlert';
 
+
 const Categories = () => {
   const [categories, setCategories] = useState([]);
   const [newCategoryName, setNewCategoryName] = useState('');

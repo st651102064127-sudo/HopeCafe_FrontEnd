@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     path: '/Employee',
     element: <Employee />
   },{
-    path: '/Login',
+    path: '/',
     element : <Login />
   },{
     path: '/EmployeeSession',
