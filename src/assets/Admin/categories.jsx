@@ -4,7 +4,7 @@ import AdminNavbar from './Component/Navbar';
 import axios from 'axios';
 import ErrorMessage from './Component/errorMessage';
 import sweetAlert from './Component/sweetAlert';
-import './style/categories.css';
+import '../style/categories.css';
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
