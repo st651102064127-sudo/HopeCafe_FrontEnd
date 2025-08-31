@@ -14,7 +14,7 @@ export default function AdminNavbar() {
       const result = await checkAdmin();
 
       if (!result.ok) {
-        navigate('/login'); // redirect ถ้าไม่ใช่ admin
+        navigate('/'); // redirect ถ้าไม่ใช่ admin
         return;
       }
 
