@@ -27,7 +27,8 @@ const Login = () => {
         );
 
         const data = response.data;
-
+       
+        
         if (data.status === "success") {
             // เก็บ token ใน localStorage
             localStorage.setItem("token", data.token);
@@ -36,8 +37,12 @@ const Login = () => {
             localStorage.setItem("user_name", data.user.name);
             localStorage.setItem("user_role", data.user.role);
 
-            // Redirect ไปหน้า food
-            window.location.href = "/queue";
+            if(data.user.role === "admin"){
+                 window.location.href = "/food";   
+            }else{
+                window.location.href = "/queue"
+            }
+        
         } else {
             // กรณี backend ส่ง status != success
             setError(data.message || "เข้าสู่ระบบไม่สำเร็จ");

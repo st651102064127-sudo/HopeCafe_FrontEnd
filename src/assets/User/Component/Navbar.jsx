@@ -13,6 +13,7 @@ export default function AdminNavbar() {
   useEffect(() => {
     const init = async () => {
       const result = await checkUser();
+
      
       
       if (!result.ok) {
@@ -21,7 +22,7 @@ export default function AdminNavbar() {
       }
 
       setUser(result.user);
-      console.log(User);
+
       
       setLoading(false); // ผ่านแล้วค่อย render navbar
     };

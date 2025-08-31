@@ -30,6 +30,8 @@ const ItemManagement = ({ allowOverflow }) => {
       setItems(foodRes.data.data);
       setCategories(catRes.data.data);
     } catch (error) {
+
+      
       console.error(error);
     }
   };
@@ -198,7 +200,7 @@ const ItemManagement = ({ allowOverflow }) => {
               {showForm ? 'ซ่อนฟอร์มเพิ่มเมนู' : 'เพิ่มเมนูอาหารใหม่'}
             </button>
           </div>
-
+ca
           {/* Add Menu Form */}
           {showForm && (
             <form className="mb-8 animate-fadeIn bg-white rounded-2xl shadow-xl border border-amber-100 overflow-hidden p-6" onSubmit={handleCreateItem}>
