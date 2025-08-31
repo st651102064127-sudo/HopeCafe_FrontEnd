@@ -37,7 +37,7 @@ const Login = () => {
             localStorage.setItem("user_role", data.user.role);
 
             // Redirect ไปหน้า food
-            window.location.href = "/food";
+            window.location.href = "/queue";
         } else {
             // กรณี backend ส่ง status != success
             setError(data.message || "เข้าสู่ระบบไม่สำเร็จ");

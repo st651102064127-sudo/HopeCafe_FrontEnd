@@ -1,7 +1,8 @@
 const checkUser = async () => {
   try {
     const token = localStorage.getItem("token");
-    
+        console.log("User role:", token);
+
     
     if (!token) {
       console.log(token);
@@ -19,10 +20,10 @@ const checkUser = async () => {
     }
 
     const data = await res.json();
-    console.log("User role:", data.user.role);
 
     // อนุญาตเฉพาะ admin และ user
     if (data.user.role !== "admin" && data.user.role !== "staff") {
+
       window.location = '/';
       return { ok: false };
     }

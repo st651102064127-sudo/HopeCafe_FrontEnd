@@ -11,7 +11,7 @@ const fetchProfile = async () => {
       },
       withCredentials: true // ใช้ถ้า backend ใช้ cookie-based
     });
-
+  
     return response.data.user;
   } catch (err) {
     console.error('Error fetching profile:', err);
