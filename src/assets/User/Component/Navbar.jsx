@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown, User } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import checkUser from '../Checkuser';
 
@@ -13,13 +13,16 @@ export default function AdminNavbar() {
   useEffect(() => {
     const init = async () => {
       const result = await checkUser();
-
+     
+      
       if (!result.ok) {
-        navigate('/login'); // redirect ถ้าไม่ใช่ admin
+        navigate('/'); // redirect ถ้าไม่ใช่ admin
         return;
       }
 
       setUser(result.user);
+      console.log(User);
+      
       setLoading(false); // ผ่านแล้วค่อย render navbar
     };
     init();

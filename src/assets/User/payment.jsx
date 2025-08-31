@@ -21,7 +21,7 @@ const Payment = () => {
             const result = await checkUser();
 
             if (!result.ok) {
-                navigate('/login');
+                navigate('/');
                 return;
             }
 

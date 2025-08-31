@@ -1,8 +1,11 @@
 const checkUser = async () => {
   try {
     const token = localStorage.getItem("token");
+    
+    
     if (!token) {
-      window.location = '/login';
+      console.log(token);
+      window.location = '/';
       return { ok: false };
     }
 
@@ -11,7 +14,7 @@ const checkUser = async () => {
     });
 
     if (!res.ok) {
-      window.location = '/login';
+      window.location = '/';
       return { ok: false };
     }
 
@@ -19,15 +22,15 @@ const checkUser = async () => {
     console.log("User role:", data.user.role);
 
     // อนุญาตเฉพาะ admin และ user
-    if (data.user.role !== "admin" && data.user.role !== "user") {
-      window.location = '/login';
+    if (data.user.role !== "admin" && data.user.role !== "staff") {
+      window.location = '/';
       return { ok: false };
     }
 
     return { ok: true, user: data.user };
   } catch (error) {
     console.error("Error fetching user:", error);
-    window.location = '/login';
+    window.location = '/';
     return { ok: false };
   }
 };

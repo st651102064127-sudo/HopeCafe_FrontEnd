@@ -211,9 +211,11 @@ const Queue = () => {
         setSelectedOrderForStatus(order);
         setShowStatusModal(true);
     };
-
+  
+    
     return (
         <>
+
             <UserNavbar />
             <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100 pt-20 ">
                 <div className="max-w-7xl mx-auto">

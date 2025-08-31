@@ -26,7 +26,7 @@ export default function AdminNavbar() {
 
   const handleLogout = () => {
     localStorage.removeItem('token'); // ลบ token
-    navigate('/login');
+    navigate('/');
   };
 
   if (loading) {
